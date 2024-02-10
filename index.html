@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-a-Sketch</title>
+
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="body">
+        <div class="contain">
+          <h1 class="header">Etch-a-Sketch</h1>
+          <div class="left__container">
+            <button class="start">start</button>
+            <button class="delete">delete</button>
+            <input
+              class="slider"
+              type="range"
+              min="2"
+              max="24"
+              step="2"
+              value="16"
+              oninput="countPixel()"
+            />
+            <p class="demo__title">Pixels: <span class="demo"></span></p>
+          </div>
+          <div class="right__container">
+            <div class="scetch"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
